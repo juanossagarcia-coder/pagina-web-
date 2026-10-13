@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JUEGOS Y MÁS | Plantilla Web</title>
+
+    <!-- Conexión con CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
+    <header>
+
+        <div class="logo">
+           JUEGOS Y MÁS        </div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">tipos de juegos</a>
+            <a href="#galeria">consolas y más</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         SECCIÓN PRINCIPAL
+    ========================== -->
+    <section id="inicio" class="hero">
+
+        <div class="hero-text">
+
+            <h1>Bienvenido a Juegos y Más</h1>
+
+            <p>
+               Juegos, consolas y mucho más. Todo lo que necesitas para vivir tu pasión gamer.             </p>
+
+            <button onclick="mostrarMensaje()">
+                Conocer más
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         NOSOTROS
+    ========================== -->
+    <section id="nosotros" class="section">
+
+        <h2>Sobre Nosotros</h2>
+
+        <p class="texto-centro">
+           🎮 Sobre nosotros
+
+Somos una página apasionada por los videojuegos y el mundo gamer. Nos dedicamos a ofrecer juegos, consolas y accesorios para que disfrutes al máximo de tu experiencia. Queremos brindar productos de calidad, buenos precios y una atención cercana a todos nuestros clientes.        </p>
+
+    </section>
+
+
+    <!-- =========================
+         SERVICIOS
+    ========================== -->
+    <section id="servicios" class="section fondo">
+
+        <h2>Servicios</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Servicio 01</h3>
+                <p>
+                    🎮 Venta de videojuegos
+Encuentra una gran variedad de juegos para disfrutar tus títulos favoritos y vivir nuevas experiencias.
+
+            </p>
+
+                <button onclick="mostrarServicio('Servicio 01')">
+                    Ver más
+                </button>
+            </div>
+
+
+            <div class="card">
+                <h3>Servicio 02</h3>
+                <p>
+                   
+
+🕹️ Venta de consolas
+Tenemos consolas para diferentes gustos, ideales para comenzar o llevar tu experiencia gamer al siguiente nivel.
+
+               </p>
+
+                <button onclick="mostrarServicio('Servicio 02')">
+                    Ver más
+                </button>
+            </div>
+
+
+            <div class="card">
+                <h3>Servicio 03</h3>
+                <p>
+                   
+🎧 Accesorios gamer
+Complementa tu experiencia con accesorios y productos ideales para jugar con mayor comodidad y estilo.                </p>
+
+                <button onclick="mostrarServicio('Servicio 03')">
+                    Ver más
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         GALERÍA
+    ========================== -->
+    <section id="galeria" class="section">
+
+        <h2>Galería</h2>
+
+        <div class="galeria">
+
+            <img
+                src="https://picsum.photos/400/300?random=1"
+                alt="Imagen 1"
+                onclick="ampliarImagen(this)"
+            >
+
+            <img
+                src="https://picsum.photos/400/300?random=2"
+                alt="Imagen 2"
+                onclick="ampliarImagen(this)"
+            >
+
+            <img
+                src="https://picsum.photos/400/300?random=3"
+                alt="Imagen 3"
+                onclick="ampliarImagen(this)"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CALCULADORA
+    ========================== -->
+    <section class="section fondo">
+
+        <h2>Calculadora</h2>
+
+        <div class="calculadora">
+
+            <input
+                type="number"
+                id="numero1"
+                placeholder="Número 1"
+            >
+
+            <input
+                type="number"
+                id="numero2"
+                placeholder="Número 2"
+            >
+
+            <div class="botones-calculadora">
+
+                <button onclick="sumar()">
+                    +
+                </button>
+
+                <button onclick="restar()">
+                    -
+                </button>
+
+                <button onclick="multiplicar()">
+                    ×
+                </button>
+
+                <button onclick="dividir()">
+                    ÷
+                </button>
+
+            </div>
+
+            <h3 id="resultado">
+                Resultado: 0
+            </h3>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+    <section id="contacto" class="section">
+
+        <h2>Contacto</h2>
+
+        <form onsubmit="enviarFormulario(event)">
+
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Nombre"
+                required
+            >
+
+            <input
+                type="email"
+                id="correo"
+                placeholder="Correo electrónico"
+                required
+            >
+
+            <textarea
+                id="mensaje"
+                placeholder="Escribe tu mensaje"
+                required
+            ></textarea>
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================== -->
+    <footer>
+
+        <p>
+            © 2026 Lorem Ipsum - Plantilla educativa
+        </p>
+
+        <p>
+            Página creada con HTML, CSS y JavaScript
+        </p>
+
+    </footer>
+
+
+    <!-- Conexión con JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
